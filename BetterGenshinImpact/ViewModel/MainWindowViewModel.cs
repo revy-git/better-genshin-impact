@@ -23,7 +23,7 @@ namespace BetterGenshinImpact.ViewModel
     {
         private readonly ILogger<MainWindowViewModel> _logger;
         private readonly IConfigService _configService;
-        public string Title { get; set; } = $"BetterGI · 更好的原神 · {Global.Version}";
+        public string Title { get; set; } = $"BetterGI · A Better Genshin Impact · {Global.Version}";
 
         public AllConfig Config { get; set; }
 
@@ -41,7 +41,7 @@ namespace BetterGenshinImpact.ViewModel
         [RelayCommand]
         private async void OnLoaded()
         {
-            _logger.LogInformation("更好的原神 {Version}", Global.Version);
+            _logger.LogInformation("A Better Genshin Impact {Version}", Global.Version);
             try
             {
                 await Task.Run(() =>
@@ -105,11 +105,11 @@ namespace BetterGenshinImpact.ViewModel
                         {
                             var uiMessageBox = new Wpf.Ui.Controls.MessageBox
                             {
-                                Title = "更新提示",
-                                Content = $"存在最新版本 {notice.Version}，点击确定前往下载页面下载最新版本",
-                                PrimaryButtonText = "确定",
-                                SecondaryButtonText = "不再提示",
-                                CloseButtonText = "取消",
+                                Title = "Update Note",
+                                Content = $"Newest version found {notice.Version}，click Sure to go to the download page for the latest version",
+                                PrimaryButtonText = "Sure",
+                                SecondaryButtonText = "Do not remind again",
+                                CloseButtonText = "Cancel",
                             };
 
                             var result = await uiMessageBox.ShowDialogAsync();

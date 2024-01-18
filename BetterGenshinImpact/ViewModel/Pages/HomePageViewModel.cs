@@ -134,7 +134,7 @@ public partial class HomePageViewModel : ObservableObject, INavigationAware
             }
             if (hWnd == IntPtr.Zero)
             {
-                System.Windows.MessageBox.Show("未找到原神窗口，请先启动原神！");
+                System.Windows.MessageBox.Show("Genshin Impact window not found, please start Genshin Impact first!");
                 return;
             }
         }

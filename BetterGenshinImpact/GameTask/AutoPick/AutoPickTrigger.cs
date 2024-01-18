@@ -73,9 +73,9 @@ public class AutoPickTrigger : ITaskTrigger
     public void OnCapture(CaptureContent content)
     {
         var speedTimer = new SpeedTimer();  
-        content.CaptureRectArea.Find(_autoPickAssets.FRo, foundRectArea =>
+        content.CaptureRectArea.Find(_autoPickAssets.GRo, foundRectArea =>
         {
-            speedTimer.Record("识别到 F 拾取键");
+            speedTimer.Record("识别到 G 拾取键");
             var scale = TaskContext.Instance().SystemInfo.AssetScale;
             var config = TaskContext.Instance().Config.AutoPickConfig;
 
@@ -108,7 +108,7 @@ public class AutoPickTrigger : ITaskTrigger
             //    {
             //        _fastModePickCount = 0;
             //        LogPick(content, "急速拾取");
-            //        Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_F);
+            //        Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_G);
             //    }
             //    return;
             //}
@@ -145,7 +145,7 @@ public class AutoPickTrigger : ITaskTrigger
                 if (_whiteList.Contains(text))
                 {
                     LogPick(content, text);
-                    Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_F);
+                    Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_G);
                     return;
                 }
                 speedTimer.Record("白名单判断");
@@ -163,7 +163,7 @@ public class AutoPickTrigger : ITaskTrigger
                 speedTimer.Record("黑名单判断");
 
                 LogPick(content, text);
-                Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_F);
+                Simulation.SendInput.Keyboard.KeyPress(VirtualKeyCode.VK_G);
             }
         });
         speedTimer.DebugPrint();

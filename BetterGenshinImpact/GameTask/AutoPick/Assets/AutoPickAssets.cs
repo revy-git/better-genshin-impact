@@ -7,6 +7,7 @@ namespace BetterGenshinImpact.GameTask.AutoPick.Assets
     public class AutoPickAssets
     {
         public RecognitionObject FRo;
+        public RecognitionObject GRo;
         public RecognitionObject ChatIconRo;
         public RecognitionObject SettingsIconRo;
 
@@ -24,7 +25,17 @@ namespace BetterGenshinImpact.GameTask.AutoPick.Assets
                     (int)(420 * info.AssetScale)),
                 DrawOnWindow = false
             }.InitTemplate();
-
+            GRo = new RecognitionObject
+            {
+                Name = "G",
+                RecognitionType = RecognitionTypes.TemplateMatch,
+                TemplateImageMat = GameTaskManager.LoadAssetImage("AutoPick", "G.png"),
+                RegionOfInterest = new Rect((int)(1090 * info.AssetScale),
+                    (int)(330 * info.AssetScale),
+                    (int)(60 * info.AssetScale),
+                    (int)(420 * info.AssetScale)),
+                DrawOnWindow = false
+            }.InitTemplate();
             ChatIconRo = new RecognitionObject
             {
                 Name = "ChatIcon",

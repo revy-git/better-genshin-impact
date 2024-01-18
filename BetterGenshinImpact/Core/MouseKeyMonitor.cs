@@ -53,7 +53,7 @@ public class MouseKeyMonitor
 
         var fi = TaskContext.Instance().Config.MacroConfig.FFireInterval;
         _fTimer.Interval = fi;
-        _fTimer.Elapsed += (sender, args) => { Simulation.PostMessage(_hWnd).KeyPress(User32.VK.VK_F); };
+        _fTimer.Elapsed += (sender, args) => { Simulation.PostMessage(_hWnd).KeyPress(User32.VK.VK_G); };
     }
 
 

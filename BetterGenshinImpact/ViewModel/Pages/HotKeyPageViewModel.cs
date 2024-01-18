@@ -66,7 +66,7 @@ public partial class HotKeyPageViewModel : ObservableObject
     {
 
         var bgiEnabledHotKeySettingModel = new HotKeySettingModel(
-            "启动停止 BetterGI",
+            "Start/Stop BetterGI",
             nameof(Config.HotKeyConfig.BgiEnabledHotkey),
             Config.HotKeyConfig.BgiEnabledHotkey,
             (_, _) =>
@@ -77,7 +77,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(bgiEnabledHotKeySettingModel);
 
         var autoPickEnabledHotKeySettingModel = new HotKeySettingModel(
-            "自动拾取开关",
+            "Auto Pickup",
             nameof(Config.HotKeyConfig.AutoPickEnabledHotkey),
             Config.HotKeyConfig.AutoPickEnabledHotkey,
             (_, _) =>
@@ -89,7 +89,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(autoPickEnabledHotKeySettingModel);
 
         var autoSkipEnabledHotKeySettingModel = new HotKeySettingModel(
-            "自动剧情开关",
+            "Auto Dialogue Skip",
             nameof(Config.HotKeyConfig.AutoSkipEnabledHotkey),
             Config.HotKeyConfig.AutoSkipEnabledHotkey,
             (_, _) =>
@@ -101,7 +101,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(autoSkipEnabledHotKeySettingModel);
 
         var autoFishingEnabledHotKeySettingModel = new HotKeySettingModel(
-            "自动钓鱼开关",
+            "Auto Fishing",
             nameof(Config.HotKeyConfig.AutoFishingEnabledHotkey),
             Config.HotKeyConfig.AutoFishingEnabledHotkey,
             (_, _) =>
@@ -113,7 +113,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(autoFishingEnabledHotKeySettingModel);
 
         var turnAroundHotKeySettingModel = new HotKeySettingModel(
-            "长按旋转视角 - 那维莱特转圈",
+            "Hold to Spin (Neuvilette)",
             nameof(Config.HotKeyConfig.TurnAroundHotkey),
             Config.HotKeyConfig.TurnAroundHotkey,
             (_, _) => { TurnAroundMacro.Done(); }
@@ -121,7 +121,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(turnAroundHotKeySettingModel);
 
         var enhanceArtifactHotKeySettingModel = new HotKeySettingModel(
-            "按下快速强化圣遗物",
+            "Enhance Artifact",
             nameof(Config.HotKeyConfig.EnhanceArtifactHotkey),
             Config.HotKeyConfig.EnhanceArtifactHotkey,
             (_, _) => { QuickEnhanceArtifactMacro.Done(); }
@@ -129,7 +129,7 @@ public partial class HotKeyPageViewModel : ObservableObject
         HotKeySettingModels.Add(enhanceArtifactHotKeySettingModel);
 
         HotKeySettingModels.Add(new HotKeySettingModel(
-            "按下快速购买商店物品",
+            "Quick Buy",
             nameof(Config.HotKeyConfig.QuickBuyHotkey),
             Config.HotKeyConfig.QuickBuyHotkey,
             (_, _) => { QuickBuyTask.Done(); }
@@ -137,28 +137,28 @@ public partial class HotKeyPageViewModel : ObservableObject
 
 
         HotKeySettingModels.Add(new HotKeySettingModel(
-            "启动/停止自动七圣召唤",
+            "Start/Stop Auto TCG",
             nameof(Config.HotKeyConfig.AutoGeniusInvokation),
             Config.HotKeyConfig.AutoGeniusInvokation,
             (_, _) => { _taskSettingsPageViewModel.OnSwitchAutoGeniusInvokation(); }
         ));
 
         HotKeySettingModels.Add(new HotKeySettingModel(
-            "启动/停止自动伐木",
+            "Start/Stop Auto Woodcutting",
             nameof(Config.HotKeyConfig.AutoWoodHotkey),
             Config.HotKeyConfig.AutoWoodHotkey,
             (_, _) => { _taskSettingsPageViewModel.OnSwitchAutoWood(); }
         ));
 
         HotKeySettingModels.Add(new HotKeySettingModel(
-            "启动/停止自动战斗",
+            "Start/Stop Auto Combat",
             nameof(Config.HotKeyConfig.AutoFightHotkey),
             Config.HotKeyConfig.AutoFightHotkey,
             (_, _) => { _taskSettingsPageViewModel.OnSwitchAutoFight(); }
         ));
 
         HotKeySettingModels.Add(new HotKeySettingModel(
-            "启动/停止自动秘境",
+            "Start/Stop Auto Domain",
             nameof(Config.HotKeyConfig.AutoDomainHotkey),
             Config.HotKeyConfig.AutoDomainHotkey,
             (_, _) => { _taskSettingsPageViewModel.OnSwitchAutoDomain(); }
