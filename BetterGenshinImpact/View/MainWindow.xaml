@@ -9,7 +9,7 @@
                  xmlns:pages="clr-namespace:BetterGenshinImpact.View.Pages"
                  xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
                  xmlns:viewModel="clr-namespace:BetterGenshinImpact.ViewModel"
-                 Title="更好的原神"
+                 Title="A Better Genshin Impact"
                  Width="900"
                  Height="600"
                  d:Background="#D2D2D2"
@@ -42,35 +42,35 @@
                            IsPaneToggleVisible="True"
                            OpenPaneLength="150">
             <ui:NavigationView.MenuItems>
-                <ui:NavigationViewItem Content="启动"
+                <ui:NavigationViewItem Content="Start"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:HomePage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="Play24" />
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="实时触发"
+                <ui:NavigationViewItem Content="Real-time Trigger"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:TriggerSettingsPage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="Timer24" />
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="独立任务"
+                <ui:NavigationViewItem Content="Automated Tasks"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:TaskSettingsPage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="TaskListSquareLtr24" />
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="辅助操控"
+                <ui:NavigationViewItem Content="Macro"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:MacroSettingsPage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="XboxController24" />
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="脚本控制"
+                <ui:NavigationViewItem Content="Script Control"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:ScriptControlPage}"
                                        Visibility="{markup:Converter Value={x:Static helpers:RuntimeHelper.IsDebuggerAttached},
@@ -79,7 +79,7 @@
                         <ui:SymbolIcon Symbol="WebAsset16" />
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="快捷键"
+                <ui:NavigationViewItem Content="Hotkeys"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:HotKeyPage}">
                     <ui:NavigationViewItem.Icon>
@@ -88,7 +88,7 @@
                 </ui:NavigationViewItem>
             </ui:NavigationView.MenuItems>
             <ui:NavigationView.FooterMenuItems>
-                <ui:NavigationViewItem Content="设置"
+                <ui:NavigationViewItem Content="Settings"
                                        NavigationCacheMode="Enabled"
                                        TargetPageType="{x:Type pages:CommonSettingsPage}">
                     <ui:NavigationViewItem.Icon>
