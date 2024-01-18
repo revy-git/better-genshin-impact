@@ -156,10 +156,10 @@ public class AutoDomainTask
     {
         var fightAssets = AutoFightContext.Instance().FightAssets;
 
-        var fRectArea = GetContentFromDispatcher().CaptureRectArea.Find(_autoPickAssets.FRo);
+        var fRectArea = GetContentFromDispatcher().CaptureRectArea.Find(_autoPickAssets.GRo);
         if (!fRectArea.IsEmpty())
         {
-            Simulation.SendInputEx.Keyboard.KeyPress(VK.VK_F);
+            Simulation.SendInputEx.Keyboard.KeyPress(VK.VK_G);
             Logger.LogInformation("自动秘境：{Text}", "进入秘境");
             // 秘境开门动画 5s
             Sleep(5000, _taskParam.Cts);
@@ -226,7 +226,7 @@ public class AutoDomainTask
                 while (!_taskParam.Cts.Token.IsCancellationRequested)
                 {
                     var content = GetContentFromDispatcher();
-                    var fRectArea = content.CaptureRectArea.Find(_autoPickAssets.FRo);
+                    var fRectArea = content.CaptureRectArea.Find(_autoPickAssets.GRo);
                     if (fRectArea.IsEmpty())
                     {
                         Sleep(100, _taskParam.Cts);
@@ -234,7 +234,7 @@ public class AutoDomainTask
                     else
                     {
                         Logger.LogInformation("检测到交互键");
-                        Simulation.SendInputEx.Keyboard.KeyPress(VK.VK_F);
+                        Simulation.SendInputEx.Keyboard.KeyPress(VK.VK_G);
                         break;
                     }
                 }

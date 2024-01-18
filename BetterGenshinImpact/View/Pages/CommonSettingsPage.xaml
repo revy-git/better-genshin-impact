@@ -160,13 +160,13 @@
                         Grid.Column="0"
                         FontTypography="Body"
                         TextWrapping="Wrap"
-                        Text="启用UID遮盖" />
+                        Text="UID Hide" />
                     <ui:TextBlock
                         Grid.Row="1"
                         Grid.Column="0"
                         Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                         TextWrapping="Wrap"
-                        Text="遮盖右下角的UID区域" />
+                        Text="Hides the UID in lower right corner" />
                     <ui:ToggleSwitch
                         Grid.Row="0"
                         Grid.RowSpan="2"
@@ -197,13 +197,13 @@
                         Grid.Column="0"
                         FontTypography="Body"
                         TextWrapping="Wrap"
-                        Text="显示小地图方位" />
+                        Text="Show Minimap Cardinal directions" />
                     <ui:TextBlock
                         Grid.Row="1"
                         Grid.Column="0"
                         Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                         TextWrapping="Wrap"
-                        Text="在小地图周围显示东南西北的文字" />
+                        Text="Displays text indicator around the minimap for north, south, west, east." />
                     <ui:ToggleSwitch
                         Grid.Row="0"
                         Grid.RowSpan="2"
