@@ -1,4 +1,4 @@
->Personal use fork mainly for rebinding hardcoded keybinds for the most part, maybe ill translate some stuff to english not sure.
+>Personal use fork mainly for rebinding hardcoded keybinds for the most part (i use G not F for pickup), maybe ill translate some stuff to english not sure.
 
 <p>
   <a href="https://bgi.huiyadan.com/"><img src="https://github.com/babalae/better-genshin-impact/assets/15783049/c3fe6d01-6932-46ae-a570-fd3027e5a2a5" align="right" width="220" hspace="5" vspace="5"></a>
